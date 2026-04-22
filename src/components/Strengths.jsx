@@ -13,11 +13,11 @@ const Strengths = () => {
     <section className="section" id="strengths">
       <div className="container">
         <h2 className="section-title animate-on-scroll">My <span className="text-gradient">Strengths</span></h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px' }}>
+        <div className="strengths-grid">
           {strengths.map((s, index) => (
-            <div className="glass-panel animate-on-scroll" style={{ padding: '24px' }} key={index}>
-              <h3 style={{ fontSize: '1.125rem', marginBottom: '12px' }}>{s.title}</h3>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{s.desc}</p>
+            <div className="glass-panel strength-card animate-on-scroll" key={index}>
+              <h3>{s.title}</h3>
+              <p>{s.desc}</p>
             </div>
           ))}
         </div>

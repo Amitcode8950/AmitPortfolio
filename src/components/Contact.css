@@ -70,3 +70,14 @@
     padding: 40px 24px;
   }
 }
+
+@media (max-width: 480px) {
+  .contact-wrapper {
+    padding: 30px 16px;
+    gap: 40px;
+  }
+  
+  .contact-item {
+    font-size: 1rem;
+  }
+}

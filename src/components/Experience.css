@@ -36,25 +36,47 @@
 }
 
 .timeline-role {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 8px;
+  font-weight: 800;
 }
 
 .timeline-company {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
 }
 
 .timeline-duration {
   color: var(--text-secondary);
   margin-bottom: 24px;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
-.timeline-links {
+.timeline-desc-list {
+  list-style: none;
+  margin-bottom: 24px;
   display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.timeline-desc-list li {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline-desc-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
 }
 
 .link-btn {
@@ -82,5 +104,21 @@
   }
   .timeline-item::before {
     left: -33px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    margin-left: 32px;
+    padding: 20px;
+  }
+  .timeline::before {
+    left: 12px;
+  }
+  .timeline-item::before {
+    left: -25px;
+  }
+  .timeline-role {
+    font-size: 1.25rem;
   }
 }

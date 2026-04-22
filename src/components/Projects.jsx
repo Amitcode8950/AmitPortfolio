@@ -11,17 +11,32 @@ const ProjectCard = ({ project, index }) => {
       ref={cardRef}
       className={`project-card glass-panel animate-on-scroll delay-${(index + 1) * 100}`}
     >
-      <div className="project-content">
-        <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{project.duration}</span>
-        <h3 className="project-title" style={{ marginTop: '0.5rem' }}>{project.title}</h3>
-        <p className="project-description">{project.description}</p>
-        <div className="project-tags">
-          {project.tags.map((tag, i) => (
-            <span className="tag" key={i}>{tag}</span>
-          ))}
-        </div>
-        <a href={project.link} className="btn-secondary" style={{padding: '8px 24px'}}>View Details</a>
+      <div className="project-header">
+        <span className="project-duration">{project.duration}</span>
+        <h3 className="project-title">{project.title}</h3>
       </div>
+      
+      <div className="project-details">
+        <div className="detail-item">
+          <strong>Problem:</strong> {project.problem}
+        </div>
+        <div className="detail-item">
+          <strong>Approach:</strong> {project.approach}
+        </div>
+      </div>
+
+      <div className="project-impact">
+        <h4>Impact & Learning:</h4>
+        <p>{project.impact}</p>
+      </div>
+
+      <div className="project-tags">
+        {project.tags.map((tag, i) => (
+          <span className="tag" key={i}>{tag}</span>
+        ))}
+      </div>
+      
+      <a href={project.link} className="btn-secondary" style={{width: '100%'}}>View Details</a>
     </div>
   );
 };
@@ -29,38 +44,30 @@ const ProjectCard = ({ project, index }) => {
 const Projects = () => {
   const projects = [
     {
-      title: 'Bank Transaction System',
+      title: 'Secure Bank Backend (Project)',
       duration: '03/2026',
-      description: 'A production-grade banking app with JWT auth, supporting 1000+ concurrent users and ACID transactions for financial consistency.',
-      tags: ['MERN', 'JWT', 'RBAC', 'MongoDB ACID'],
+      problem: 'Maintaining strict data consistency and preventing inconsistent states in transactional simulations.',
+      approach: 'Built a transaction-safe backend using MongoDB transactions and implemented secure authentication with RBAC.',
+      impact: 'Focused on Preventing race conditions and ensuring reliable state management in financial flows.',
+      tags: ['Node.js', 'MongoDB', 'JWT', 'System Design'],
       link: '#'
     },
     {
       title: 'Finance Analytics Dashboard',
       duration: '03/2026',
-      description: 'Interactive Power BI dashboards visualizing 50K+ records with automated ETL pipelines and Python trend forecasting.',
-      tags: ['Power BI', 'Python', 'ETL', 'Data Analytics'],
+      problem: 'Handling batch processing of large financial datasets for performance-driven visualization.',
+      approach: 'Processed 50K+ records using optimized PostgreSQL queries and improved load times by 70%.',
+      impact: 'Demonstrated ability to optimize data pipelines and improve end-to-end system performance.',
+      tags: ['Python', 'PostgreSQL', 'Data Engineering', 'React'],
       link: '#'
     },
     {
-      title: 'E-Commerce Platform',
-      duration: '11/2024 - 12/2024',
-      description: 'Full-featured shopping platform with zero-downtime deployments and Redis caching strategies for high performance.',
-      tags: ['Express.js', 'Redis', 'React', 'REST APIs'],
-      link: '#'
-    },
-    {
-      title: 'Health Analysis Platform',
-      duration: '11/2024 - 12/2024',
-      description: 'Microservices-based health app featuring biometric data processing and an AI-driven personalized health recommendation engine.',
-      tags: ['Microservices', 'AI', 'Real-time Chat', 'Biometrics'],
-      link: '#'
-    },
-    {
-      title: 'Real-Time Collaboration App',
-      duration: '07/2024 - 10/2024',
-      description: 'A multi-user document editor supporting concurrent edits with operational transformations and low-latency WebSocket updates.',
-      tags: ['WebSockets', 'OT Algorithms', 'Node.js', 'React'],
+      title: 'Real-Time Collaboration Platform',
+      duration: '10/2024',
+      problem: 'Implementing real-time synchronization and exploring conflict resolution concepts in multi-user environments.',
+      approach: 'Utilized WebSockets for live sync and explored basic conflict resolution logic for concurrent edits.',
+      impact: 'Maintained low-latency updates and gained deep insight into distributed state management.',
+      tags: ['WebSockets', 'Node.js', 'React', 'Algorithms'],
       link: '#'
     }
   ];
@@ -68,7 +75,7 @@ const Projects = () => {
   return (
     <section className="section" id="projects">
       <div className="container">
-        <h2 className="section-title animate-on-scroll">Major <span className="text-gradient">Projects</span></h2>
+        <h2 className="section-title animate-on-scroll">Engineering <span className="text-gradient">Projects</span></h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <ProjectCard project={project} index={index} key={index} />

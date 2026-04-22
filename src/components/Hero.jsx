@@ -95,10 +95,10 @@ const Hero = () => {
             AMIT <span className="text-gradient">KUMAR</span>
           </h1>
           <h3 style={{marginBottom: '1rem', color: 'var(--text-secondary)', fontSize: '1.2rem', lineHeight: '1.4'}}>
-            Full Stack Developer — MERN Stack — Data Analyst — Backend Developer
+            Backend-Focused Software Engineer | MERN Stack | System Design
           </h3>
           <p className="hero-subtitle">
-            I am a Full Stack Developer (MERN) and Data Analyst with a strong foundation in Data Structures and Algorithms, cloud deployment, and building scalable web applications.
+            I build scalable backend systems, high-performance APIs, and data-intensive applications with a strong focus on reliability, performance, and clean architecture.
           </p>
           <div className="hero-actions">
             <a href="https://linkedin.com" className="btn-primary" target="_blank" rel="noopener noreferrer">LinkedIn</a>

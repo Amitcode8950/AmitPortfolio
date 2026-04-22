@@ -4,28 +4,20 @@ import './Skills.css';
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Frontend & UI/UX',
-      skills: ['Reactjs', 'Angularjs', 'Vuejs', 'Redux', 'JavaScript ES6', 'TypeScript', 'Tailwind CSS', 'Figma', 'UI/UX', 'HTML5', 'CSS3']
+      title: 'Backend',
+      skills: ['Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'Redis', 'REST APIs', 'Spring Boot Basics']
     },
     {
-      title: 'Backend & Databases',
-      skills: ['Node.js', 'Express.js', 'Spring Boot', 'MongoDB', 'PostgreSQL', 'SQL', 'Redis', 'Socket.IO', 'JWT', 'RESTful API', 'Microservices']
-    },
-    {
-      title: 'Data Analysis & ML',
-      skills: ['Python', 'Pandas', 'Numpy', 'MatplotLib', 'Seaborn', 'Microsoft Power BI', 'EDA', 'GenAI Integration']
-    },
-    {
-      title: 'Tools & DevOps',
-      skills: ['Docker', 'Git', 'GitHub', 'npm', 'Postman', 'Vercel', 'CI/CD Pipelines', 'Visual Studio Code', 'Cursor']
+      title: 'Frontend',
+      skills: ['React', 'JavaScript (ES6+)', 'Redux', 'Tailwind CSS', 'HTML5', 'CSS3']
     },
     {
       title: 'Fundamentals',
-      skills: ['DSA with Java', 'System Design', 'Problem Solving', 'API Design']
+      skills: ['Data Structures & Algorithms', 'System Design Basics', 'Database Normalization', 'Object Oriented Programming']
     },
     {
-      title: 'Languages',
-      skills: ['Hindi (Native)', 'English (Professional Working Proficiency)']
+      title: 'Tools & DevOps',
+      skills: ['Docker Basics', 'Git', 'GitHub', 'Postman', 'Vercel', 'VS Code', 'Cursor']
     }
   ];
 

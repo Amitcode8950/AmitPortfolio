@@ -1,0 +1,68 @@
+.career-goal {
+  padding: 80px 0;
+}
+
+.career-card {
+  padding: 60px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid var(--accent-glow);
+}
+
+.career-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.career-statement {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.career-points {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.point .icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .career-card {
+    padding: 40px 24px;
+  }
+  
+  .career-card h2 {
+    font-size: 2rem;
+  }
+  
+  .career-statement {
+    font-size: 1.1rem;
+  }
+  
+  .career-points {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+}

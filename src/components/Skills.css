@@ -38,3 +38,22 @@
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 10px 20px var(--accent-glow);
 }
+@media (max-width: 768px) {
+  .skills-wrapper {
+    gap: 32px;
+  }
+  
+  .category-title {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
+  
+  .skills-container {
+    gap: 12px;
+  }
+  
+  .skill-pill {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

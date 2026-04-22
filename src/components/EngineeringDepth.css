@@ -1,0 +1,90 @@
+.dsa-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.stat-card {
+  padding: 32px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.stat-sub {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.skills-depth-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+}
+
+.depth-card {
+  padding: 32px;
+  transition: transform 0.3s ease;
+}
+
+.depth-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.depth-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.depth-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.depth-skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.depth-skills-list li {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.depth-skills-list li::before {
+  content: '•';
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .dsa-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .stat-card {
+    padding: 24px;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+  }
+}

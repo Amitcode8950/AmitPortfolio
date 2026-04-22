@@ -33,31 +33,10 @@ const Contact = () => {
                 <label htmlFor="firstName">First Name:</label>
                 <input type="text" id="firstName" />
               </div>
-              <div className="form-group">
-                <label htmlFor="lastName">Last Name:</label>
-                <input type="text" id="lastName" />
-              </div>
             </div>
             <div className="form-group">
               <label htmlFor="email">Email:</label>
               <input type="email" id="email" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="phone">Phone Number:</label>
-              <input type="tel" id="phone" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="gender">Gender:</label>
-              <select id="gender" style={{background: 'rgba(255, 255, 255, 0.05)', border: '1px solid var(--border-color)', padding: '16px', borderRadius: '8px', color: 'var(--text-primary)'}}>
-                <option value="">Select...</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div className="form-group">
-              <label htmlFor="address">Address:</label>
-              <input type="text" id="address" />
             </div>
             <div className="form-group">
               <label htmlFor="feedback">Feedback:</label>

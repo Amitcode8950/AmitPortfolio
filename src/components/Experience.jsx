@@ -12,14 +12,23 @@ const ExperienceCard = ({ exp, index }) => {
       className={`timeline-item glass-panel animate-on-scroll delay-${(index + 1) * 100}`}
     >
       <div className="timeline-content">
-        <h3 className="timeline-role">{exp.role}</h3>
-        <h4 className="timeline-company text-gradient">{exp.company}</h4>
+        <h3 className="timeline-role text-gradient">{exp.role}</h3>
+        <h4 className="timeline-company">{exp.company}</h4>
         <p className="timeline-duration">{exp.duration}</p>
-        <ul style={{ marginTop: '1rem', color: 'var(--text-secondary)', paddingLeft: '1.2rem' }}>
-          {exp.points.map((point, i) => (
-            <li key={i} style={{ marginBottom: '0.5rem' }}>{point}</li>
-          ))}
+        <ul className="timeline-desc-list">
+          {Array.isArray(exp.desc) ? (
+            exp.desc.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))
+          ) : (
+            <li>{exp.desc}</li>
+          )}
         </ul>
+        <div className="timeline-links">
+          {exp.links && exp.links.map((link, i) => (
+            <button className="link-btn" key={i}>{link}</button>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -28,54 +37,62 @@ const ExperienceCard = ({ exp, index }) => {
 const Experience = () => {
   const experiences = [
     {
+      role: 'Software Engineer Intern',
       company: 'Zaalima Development Pvt. Ltd',
-      role: 'Web Developer',
-      duration: '03/2026 - Present | Bahadurgarh, Haryana',
-      points: [
-        'Architecting production-grade MERN applications handling 5K+ daily requests',
-        'Implemented JWT token-based authentication with refresh token rotation',
-        'Optimized MongoDB queries reducing response time from 800ms to 120ms',
-        'Designed role-based access control (RBAC) supporting multi-tier roles'
-      ]
+      duration: '01/2026 - Present | Bahadurgarh, Haryana',
+      desc: [
+        'Contributed to backend services for high-concurrency transaction-based systems.',
+        'Improved API performance and reliability using specialized indexing and caching strategies.',
+        'Assisted in modularizing monolithic components into a service-based architecture.',
+        'Implemented secure authentication flows using JWT and role-based access control (RBAC).'
+      ],
+      links: ['Portfolio', 'GitHub']
     },
     {
+      role: 'Full Stack Intern',
       company: 'Future Interns',
-      role: 'Full Stack Web Developer',
-      duration: '03/2026 | Not Specified',
-      points: [
-        'Architecting scalable MERN applications with Express.js APIs',
-        'Achieved 40% performance gains through MongoDB optimization',
-        'Deployed production apps to Vercel with automated CI/CD pipelines'
+      duration: '01/2024 - 05/2024 | Remote',
+      desc: [
+        'Built a real-time analytics dashboard with WebSocket integration for live data updates.',
+        'Developed REST APIs and optimized database queries for performance gains.',
+        'Improved frontend performance and aesthetics, achieving high Lighthouse scores (90+).'
+      ],
+      links: ['Live Demo', 'GitHub']
+    },
+    {
+      role: "GenAI & MERN Stack Trainee",
+      company: "WEBTECH INDUSTRY",
+      duration: "Sep 2024 - Oct 2024",
+      desc: [
+        "Completed a hands-on workshop covering MERN stack development and Generative AI fundamentals.",
+        "Built mini projects integrating APIs and AI-driven features into web applications."
       ]
     },
     {
-      company: 'CodTech IT Solutions',
-      role: 'Frontend Developer',
-      duration: '09/2024 - 10/2024 | Not Specified',
-      points: [
-        'Built responsive React.js interfaces with Tailwind CSS achieving 95 Lighthouse scores',
-        'Implemented component-based architecture reducing code duplication',
-        'Collaborated with UI/UX teams on pixel-perfect implementations'
+      role: "Frontend Developer Intern",
+      company: "CODTECH IT SOLUTIONS",
+      duration: "Jul 2024 - Sep 2024",
+      desc: [
+        "Developed responsive web interfaces using HTML, CSS, and JavaScript.",
+        "Built multiple frontend projects focusing on UI/UX improvements and cross-device compatibility."
       ]
     },
     {
-      company: 'CodSoft & Prodigy InfoTech',
-      role: 'Web Developer',
-      duration: '07/2024 - 12/2024 | Not Specified',
-      points: [
-        'Developed 8 full-featured web projects including dashboards and e-commerce platforms',
-        'Implemented WCAG 2.1 accessibility standards and cross-browser testing',
-        'Managed Git workflows for seamless team collaboration'
+      role: "Web Developer Intern",
+      company: "CodSoft",
+      duration: "Jul 2024 - Aug 2024",
+      desc: [
+        "Worked on real-world web development projects, strengthening fundamentals in frontend development.",
+        "Gained experience in project-based learning and agile workflows."
       ]
     },
     {
-      company: 'WebTech Industry',
-      role: 'Frontend Web Developer (GenAI/ML)',
-      duration: '09/2024 - 10/2024 | Not Specified',
-      points: [
-        'Explored GenAI integration in React frontends',
-        'Built machine learning-powered data visualization dashboards',
-        'Participated in cross-functional sprints with ML engineers'
+      role: "Frontend Web Developer",
+      company: "Self / Personal Projects",
+      duration: "Jul 2024 - Aug 2024",
+      desc: [
+        "Built personal frontend projects using JavaScript and modern web design principles.",
+        "Focused on improving UI design, interactivity, and performance optimization."
       ]
     }
   ];
