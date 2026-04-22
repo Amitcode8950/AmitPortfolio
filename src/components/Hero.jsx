@@ -102,7 +102,7 @@ const Hero = () => {
           </p>
           <div className="hero-actions">
             <a href="https://linkedin.com" className="btn-primary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com" className="btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/Amitcode8950" className="btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
         <div className="hero-image animate-on-scroll delay-200">
