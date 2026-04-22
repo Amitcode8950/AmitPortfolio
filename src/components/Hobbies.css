@@ -1,0 +1,25 @@
+.hobbies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hobby-pill {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.hobby-pill:hover {
+  border-color: var(--accent);
+  color: var(--text-primary);
+  background: var(--bg-glass);
+}
