@@ -1,56 +1,24 @@
-# Amit Kumar's Premium Portfolio 🚀
+🚀 **Amit Kumar | Software Engineer | MERN Stack | Backend-Focused**
 
-A high-performance, professional portfolio built with the **MERN stack** aesthetic, featuring advanced interactions, 3D effects, and a comprehensive showcase of engineering expertise tailored for Big Tech (FAANG) applications.
+I build **high-performance, scalable web applications** with a strong focus on backend architecture, system design, and measurable impact.
 
-![Amit Portfolio Showcase](https://img.shields.io/badge/Status-Production--Ready-success?style=for-the-badge)
-![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20Vite%20%7C%20Vanilla%20CSS-blue?style=for-the-badge)
+🔹 **Portfolio Highlights**
+• Engineered a **secure banking backend** with ACID compliance
+• Built a **finance analytics dashboard** handling 50K+ records
+• Optimized API performance from **800ms → 120ms latency**
+• Designed production-ready systems with clean, modular architecture
 
-## ✨ Features
+🔹 **Tech Stack**
+React.js • Node.js • Express • MongoDB • Vite • REST APIs • System Design
 
-- **Deep Space Dark Mode**: A custom-designed glassmorphic aesthetic with neon indigo and pink accents.
-- **3D Tilt Interactions**: Content cards respond dynamically to cursor movement using a custom `useTilt` hook.
-- **Particle System**: An interactive canvas-based particle background in the Hero section.
-- **Production Experience**: Detailed breakdown of roles at Zaalima Development and Future Interns, highlighting quantifiable impacts.
-- **Major Projects**: 5 high-impact projects including a Secure Bank Backend (ACID compliance) and a Finance Analytics Dashboard (50K records).
-- **Quantifiable Metrics**: Engineering-focused descriptions highlighting performance optimizations (e.g., 800ms to 120ms latency reduction).
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
+🔹 **Core Strengths**
+• Data Structures & Algorithms
+• Backend Engineering & API Design
+• Performance Optimization
+• Scalable System Architecture
 
-## 🛠️ Tech Stack
+💡 Passionate about solving real-world problems and building systems that scale.
 
-- **Frontend**: React.js, Vite
-- **Styling**: Vanilla CSS (Custom tokens), Glassmorphism
-- **Interactions**: Intersection Observer API, Canvas API, Custom Hooks
-- **Architecture**: Modular Component-based design
+🔗 Portfolio: https://github.com/Amitcode8950/AmitPortfolio
 
-## 🚀 Installation & Local Development
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Amitcode8950/AmitPortfolio.git
-   ```
-
-2. **Navigate to the directory:**
-   ```bash
-   cd AmitPortfolio
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-4. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
-
-## 📈 HR Portfolio Audit
-
-This portfolio has been audited for **Big Tech (Google/FAANG)** standards, focusing on:
-- **Quantifiable Impact**: Metrics-driven achievements.
-- **Engineering Depth**: Focus on DSA, System Design, and Backend Architecture.
-- **Production Readiness**: Clean code, CI/CD ready, and high performance.
-
----
-
-Built with ❤️ by [Amit Kumar](https://github.com/Amitcode8950)
+#SoftwareEngineer #MERN #BackendDeveloper #OpenToWork #FAANG #WebDevelopment
